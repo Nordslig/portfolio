@@ -11,7 +11,7 @@ header
   background-color: rgb(7, 49, 93)
   h1
     font-family: 'Montserrat', sans-serif
-    font-size: 2.8rem
+    font-size: 2.5rem
     letter-spacing: 0.2rem
     color: rgb(238, 181, 116)
   h2
@@ -19,19 +19,36 @@ header
     font-size: 1.5rem
     letter-spacing: 0.1rem
     color: white
-// do poprawy phone po obrocie
-// @media (#{$phone-rotation})
-//   header
-//     padding: 2rem
-@media (#{$tablet})
+
+@media #{$phone-landscape}
+  header
+    width: 67vw
+    height: 40vw 
+    max-height: 20em
+    white-space: nowrap
+    padding: 2rem   
+    margin-left: 30%
+    h1
+      font-size: 2.8rem
+    h2
+      font-size: 1.8rem
+
+@media #{$tablet}
   header
     height: 40vw
     max-height: 20em
-    width: 60vw
+    width: 66vw
     justify-content: space-evenly
-    margin: 2%
-    margin-left: 10%
+    margin-left: 30%
     h1
       font-size: 3.3em
     h2
       font-size: 2em
+
+@media #{$tablet-landscape}
+  header
+    max-height: 40vw
+    h1
+      font-size: 4em
+    h2
+      font-size: 2.8em
