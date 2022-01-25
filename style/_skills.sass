@@ -1,0 +1,39 @@
+.skills
+  margin-top: 5%
+  h2
+    margin-left: 20%
+    margin-right: 10%
+    margin-bottom: 5%
+    padding-top: 1rem
+    padding-bottom: 1rem 
+    font-size: 1.6rem
+    font-family: $main-font
+    text-align: center
+    background-color: $main-color
+    color: $secondary-color
+  .skills-flex-parent
+    display: flex
+    flex-direction: column
+    h3
+      font-family: $main-font
+      font-size: 1.3rem
+      padding: .5rem
+    li 
+      padding: .2rem
+      list-style: 
+      font-family: $secondary-font
+    .skills-programing-parent
+      flex-basis: 0
+      flex-grow: 1
+      // border-top: 2px $main-color solid
+      // border-right: 2px $main-color solid
+    .skills-general-parent 
+      flex-basis: 0
+      flex-grow: 1
+      // border-top: 2px $secondary-color solid
+      // border-left: 2px $secondary-color solid
+      h3
+        text-align: right   
+      ul
+        & li
+          text-align: right    
