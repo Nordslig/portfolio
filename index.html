@@ -80,18 +80,23 @@
       </div>
     </div>
     <div class="contact">
+      <h2>Kontakt</h2>
       <form action="">
-        <label for="nick">Imię/nick:</label>
-        <input type="text" name="nick" />
-        <label for="email">E-mail:</label>
-        <input type="text" name="email" />
-        <label for="mtext">Treść wiadomości:</label>
-        <textarea name="mtext" style="resize: none"></textarea>
-        <input
-          type="submit"
-          value="Wyślij wiadomość!"
-          onclick="console.log(`Wysłano wiadomość!`)"
-        />
+        <div class="inputs">
+          <label for="nick">Imię/nick:</label>
+          <input type="text" name="nick" />
+          <label for="email">E-mail:</label>
+          <input type="text" name="email" />
+          <label for="mtext">Treść wiadomości:</label>
+        </div>
+        <div class="message">
+          <textarea name="mtext" style="resize: none"></textarea>
+          <input
+            type="submit"
+            value="Wyślij wiadomość!"
+            onclick="console.log(`Wysłano wiadomość!`)"
+          />
+        </div>
       </form>
     </div>
     <footer><h2>Made by Bartosz Pindel &copy</h2></footer>
