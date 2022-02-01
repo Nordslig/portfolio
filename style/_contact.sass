@@ -20,9 +20,59 @@
     // textarea:nth-of-type(odd)
     //   width: 80vw 
     //   text-align: right
-    .inputs, .message
+    .inputs,
+    .message
       display: flex
-      flex-direction: column
-      &:nth-child(odd)
-        width: 80vw
-        
+      // flex-direction: column
+      flex-wrap: wrap
+      >*
+        // flex-basis: 100%
+        // &:nth-of-type(even)
+        //   // flex-basis: 50%
+        //   width: 50%
+          
+          
+
+          
+      label, input[type=submit]
+        width: 50%
+        padding: .2rem
+        margin: 2% 5% 2% 2%
+        background-color: $secondary-color
+      // textarea, 
+      input[type=text], 
+      input[type=email]
+        width: 60%
+        margin-left: 40%
+        color: white
+        // margin-right: 0%
+        // float: right
+      input, textarea
+        margin: 2% 5% 2% 0
+        padding: .2rem
+        border: black 1px solid 
+        background-color: $main-color
+        // color: white
+        font-family: $secondary-font
+      textarea
+        height: 10rem 
+        width: 80%
+        margin: 2% auto
+        color: white
+      textarea::placeholder,
+      input::placeholder
+        color: rgb(246, 237, 237)
+      textarea:focus,
+      input:focus
+        // border: white 100px solid
+        outline: none
+        // color: red
+        // &:nth-child(even)
+        //   position: absolute
+        //   right: 0 
+          // text-align: right
+          // width: 50vw
+    // .inputs:nth-child(even)
+    //   width: 50%
+    // .message:nth-child(even)
+    //   width: 50%

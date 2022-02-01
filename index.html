@@ -84,13 +84,26 @@
       <form action="">
         <div class="inputs">
           <label for="nick">Imię/nick:</label>
-          <input type="text" name="nick" />
+          <input
+            type="text"
+            name="nick"
+            placeholder="Jan Kowalski"
+            autocomplete="off"
+          />
           <label for="email">E-mail:</label>
-          <input type="text" name="email" />
-          <label for="mtext">Treść wiadomości:</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="jan.kowalski@gmail.com"
+          />
         </div>
         <div class="message">
-          <textarea name="mtext" style="resize: none"></textarea>
+          <label for="mtext">Treść wiadomości:</label>
+          <textarea
+            name="mtext"
+            style="resize: none"
+            placeholder="Dzień dobry. Jestem zainteresowany współpracą. Proszę o kontakt pod numerem 123456789"
+          ></textarea>
           <input
             type="submit"
             value="Wyślij wiadomość!"
