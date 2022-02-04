@@ -20,37 +20,40 @@
     // textarea:nth-of-type(odd)
     //   width: 80vw 
     //   text-align: right
+    // 
     .inputs,
     .message
       display: flex
-      // flex-direction: column
       flex-wrap: wrap
-      >*
-        // flex-basis: 100%
-        // &:nth-of-type(even)
-        //   // flex-basis: 50%
-        //   width: 50%
-          
-          
-
-          
+      // input[type=submit]
+      //   padding: 
       label, input[type=submit]
-        width: 50%
-        padding: .2rem
+        min-width: 60%
+        padding: .1rem .5rem
         margin: 2% 5% 2% 2%
         background-color: $secondary-color
+        font-size: 1.3rem
+      input[type=submit]
+        border: 1.3px solid $main-color
+        // border-top: 2px solid $main-color
+        // border-left: 2px solid $main-color
+        // border-right: 2px solid $secondary-color
+        // border-bottom: 2px solid $secondary-color
       // textarea, 
       input[type=text], 
       input[type=email]
-        width: 60%
-        margin-left: 40%
+        width: 70%
+        margin-left: 30%
         color: white
         // margin-right: 0%
         // float: right
+        text-align: right
+        font-size: 1rem
       input, textarea
         margin: 2% 5% 2% 0
         padding: .2rem
-        border: black 1px solid 
+        // border: black 1px solid 
+        border: none
         background-color: $main-color
         // color: white
         font-family: $secondary-font
@@ -58,14 +61,26 @@
         height: 10rem 
         width: 80%
         margin: 2% auto
+        text-align: right
+        font-size: 1.2rem
         color: white
       textarea::placeholder,
       input::placeholder
-        color: rgb(246, 237, 237)
+        color: rgba(246, 237, 237, 0.438)
       textarea:focus,
       input:focus
         // border: white 100px solid
         outline: none
+      // textarea::-webkit-scrollbar 
+        // width: 1em
+        // background-color: darkgrey;
+        // outline: 1px solid slategrey;
+      //   width: .1rem
+      //   background-color: $secondary-color
+      // textarea::scrollbar
+      //   width: .1rem 
+      //   background-color: $secondary-color
+        // text-align: right
         // color: red
         // &:nth-child(even)
         //   position: absolute

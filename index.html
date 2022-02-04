@@ -37,18 +37,29 @@
           <div class="line"></div>
           <ul>
             <li>
-              HTML
-              <div class="skill-level">
-                <div class="level one"></div>
-                <div class="level two"></div>
-                <div class="level three"></div>
-                <div class="level four"></div>
-                <div class="level five"></div>
+              <span>HTML</span>
+              <div class="skill-zone">
+                <div class="skill-level html"></div>
               </div>
             </li>
-            <li>CSS</li>
-            <li>JS</li>
-            <li>React</li>
+            <li>
+              <span>CSS</span>
+              <div class="skill-zone">
+                <div class="skill-level css"></div>
+              </div>
+            </li>
+            <li>
+              <span>JS</span>
+              <div class="skill-zone">
+                <div class="skill-level js"></div>
+              </div>
+            </li>
+            <li>
+              <span>React</span>
+              <div class="skill-zone">
+                <div class="skill-level react @if (.js)"></div>
+              </div>
+            </li>
           </ul>
         </div>
         <div class="skills-general-parent">
@@ -83,10 +94,10 @@
       <h2>Kontakt</h2>
       <form action="">
         <div class="inputs">
-          <label for="nick">Imię/nick:</label>
+          <label for="name">Imię:</label>
           <input
             type="text"
-            name="nick"
+            name="name"
             placeholder="Jan Kowalski"
             autocomplete="off"
           />
@@ -95,6 +106,7 @@
             type="email"
             name="email"
             placeholder="jan.kowalski@gmail.com"
+            autocomplete="off"
           />
         </div>
         <div class="message">
@@ -103,6 +115,7 @@
             name="mtext"
             style="resize: none"
             placeholder="Dzień dobry. Jestem zainteresowany współpracą. Proszę o kontakt pod numerem 123456789"
+            autocomplete="off"
           ></textarea>
           <input
             type="submit"

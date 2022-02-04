@@ -4,8 +4,6 @@
     margin-left: 20%
     margin-right: 10%
     margin-bottom: 5%
-    // padding-top: 1rem
-    // padding-bottom: 1rem 
     padding: .5rem
     font-size: 2rem
     font-family: $main-font
@@ -23,23 +21,38 @@
     ul
       margin: 1%
     li 
-      // display: flex
-      // justify-content: space-between
-      // flex-grow: 1
-      max-width: 50vw
+      display: flex
+      justify-content: space-between
+      align-items: center
       margin-top: 1%
       margin-bottom: 1%  
       padding: .2rem
       list-style: none
       font-family: $secondary-font
       font-size: 1.3rem
-      .skill-level 
-        display: flex
-        justify-content: center
-        align-items: center
-        width: 50vw
-        // background-color: black
-
+      span
+        // flex-grow: 1 
+        text-align: center
+      .skill-zone
+        height: 1.3rem
+        width: 12.5rem
+        border: 2px solid black
+        border-radius: 90px
+        overflow: hidden
+        .skill-level
+          height: 1.3rem
+          &.html
+            width: 50%
+            background-color: #d3831cdc
+          &.css
+            width: 40%
+            background-color: #d4b818dc
+          &.js
+            width: 30%
+            background-color: #cc4117dc
+          &.react
+            width:  20% 
+            background-color: #b81a05dc
     .skills-programing-parent
       flex-basis: 0
       flex-grow: 1
