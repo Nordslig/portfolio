@@ -32,10 +32,10 @@
       font-size: 1.3rem
       span
         // flex-grow: 1 
-        text-align: center
+        // text-align: center
       .skill-zone
-        height: 1.3rem
-        width: 12.5rem
+        height: 1.1rem
+        width: 10rem
         border: 2px solid black
         border-radius: 90px
         overflow: hidden
@@ -67,6 +67,12 @@
       .line
         height: .2rem
         background-color: $secondary-color
+      ul
+        li
+          span
+            // width: 50%
+            // word-break: break-word
+            // max-width: 40%
       // border-top: 2px $secondary-color solid
       // border-left: 2px $secondary-color solid
       h3
@@ -74,7 +80,7 @@
       ul
         display: flex
         flex-direction: column
-        align-items: flex-end
         & li
           text-align: right    
           flex-direction: row-reverse
+          justify-content: space-between
