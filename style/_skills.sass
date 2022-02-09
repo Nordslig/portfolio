@@ -31,6 +31,7 @@
       font-family: $secondary-font
       font-size: 1.3rem
       span
+        max-width: 50%
         // flex-grow: 1 
         // text-align: center
       .skill-zone
@@ -41,6 +42,7 @@
         overflow: hidden
         .skill-level
           height: 1.3rem
+          width: 10rem
           &.html
             width: 50%
             background-color: #d3831cdc
@@ -53,17 +55,29 @@
           &.react
             width:  20% 
             background-color: #b81a05dc
+          &.english
+            width: 60% 
+            background-color: #b81a05dc
+          &.organization
+            width: 50% 
+            background-color: #b81a05dc
+          &.deadline
+            width: 40% 
+            background-color: #b81a05dc
+          &.comunication
+            width: 80% 
+            background-color: #b81a05dc
     .skills-programing-parent
-      flex-basis: 0
-      flex-grow: 1
+      // flex-basis: 0
+      // flex-grow: 1
       .line
         height: .2rem
         background-color: $main-color
       // border-top: 2px $main-color solid
       // border-right: 2px $main-color solid
     .skills-general-parent 
-      flex-basis: 0
-      flex-grow: 1
+      // flex-basis: 0
+      // flex-grow: 1
       .line
         height: .2rem
         background-color: $secondary-color
