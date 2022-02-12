@@ -1,4 +1,3 @@
-// console.log(document.querySelector('.submit'));
 const currentTime = new Date();
 
 const messageSendTime = currentTime.getHours() + ':' + currentTime.getMinutes();
