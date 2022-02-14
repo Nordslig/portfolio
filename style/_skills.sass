@@ -24,6 +24,7 @@
       display: flex
       justify-content: space-between
       align-items: center
+      height: 3.2rem
       margin-top: 1%
       margin-bottom: 1%  
       padding: .2rem
@@ -32,68 +33,59 @@
       font-size: 1.3rem
       span
         max-width: 50%
-        // flex-grow: 1 
-        // text-align: center
       .skill-zone
+        display: flex
+        flex-direction: row
+        justify-content: space-between
         height: 1.1rem
         width: 10rem
-        border: 2px solid black
         border-radius: 90px
-        overflow: hidden
-        .skill-level
-          height: 1.3rem
-          width: 10rem
-          &.html
-            width: 50%
-            background-color: #d3831cdc
-          &.css
-            width: 40%
-            background-color: #d4b818dc
-          &.js
-            width: 30%
-            background-color: #cc4117dc
-          &.react
-            width:  20% 
-            background-color: #b81a05dc
-          &.english
-            width: 60% 
-            background-color: #359019dc
-          &.organization
-            width: 50% 
-            background-color: #d3831cdc
-          &.deadline
-            width: 40% 
-            background-color: #d4b818dc
-          &.comunication
-            width: 80% 
-            background-color: #0562b8dc
+        .bar
+          width: 18%
+          border: black solid 2px
+          transform: skew(-10deg)
+          &:nth-of-type(1)
+            border-top-left-radius: 45px
+            border-bottom-left-radius: 45px
+          &:nth-last-of-type(1)
+            border-top-right-radius: 45px
+            border-bottom-right-radius: 45px
+          &.beg
+            background-color: #da1900fb
+          &.inter
+            background-color: #ec950a
+          &.adv
+            background-color: #ceca10dc
+          &.exp
+            background-color: #1ab83cdc
+          &.leg
+            background-color: #1784ccdc
     .skills-programing-parent
-      // flex-basis: 0
-      // flex-grow: 1
       .line
         height: .2rem
         background-color: $main-color
-      // border-top: 2px $main-color solid
-      // border-right: 2px $main-color solid
     .skills-general-parent 
-      // flex-basis: 0
-      // flex-grow: 1
       .line
         height: .2rem
         background-color: $secondary-color
-      ul
-        li
-          span
-            // width: 50%
-            // word-break: break-word
-            // max-width: 40%
-      // border-top: 2px $secondary-color solid
-      // border-left: 2px $secondary-color solid
       h3
         text-align: right   
       ul
         display: flex
         flex-direction: column
+        .skill-zone
+          flex-direction: row-reverse
+          .bar
+            &:nth-of-type(1) 
+              border-top-left-radius: 0
+              border-bottom-left-radius: 0
+              border-top-right-radius: 45px
+              border-bottom-right-radius: 45px
+            &:nth-last-of-type(1)
+              border-top-right-radius: 0
+              border-bottom-right-radius: 0
+              border-top-left-radius: 45px
+              border-bottom-left-radius: 45px
         & li
           text-align: right    
           flex-direction: row-reverse
