@@ -18,14 +18,17 @@
   .project
     display: flex
     flex-direction: column
-    align-items: flex-end
     h3
+      width: 10rem
       margin-top: 3%
-      margin-right: 5%
+      margin-left: 50%
       margin-bottom: 3%
-      // text-align: center
+      padding: .5rem
+      text-align: center
       font-family: $main-font
       font-size: 1.7rem
+      color: $secondary-color
+      background-color: $main-color
     img
       width: 90%
       margin: 0 auto
@@ -33,15 +36,36 @@
     p
       width: 80%
       margin-top: 3%
-      margin-right: 5% 
+      margin-left: 5%
+      // margin-right: 5% 
+      padding: .6rem
       font-family: $secondary-font
       font-size: 1.3rem
+      color: $main-color
+      background-color: $secondary-color
       span
-        font-weight: 800
-    ul
-      width: 80% 
-      margin-top: 3% 
-      margin-right: 5% 
-      font-family: $secondary-font
-      list-style: none
-      font-size: 1.3rem
+        font-weight: 700
+    p.tech
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-around
+      background-color: transparent
+      span
+        margin: 5% 0
+        padding: .1% 2%
+        font-weight: 400
+        color: $main-font
+        // border-color: black 
+      .sass
+        background-color: #CF649A
+        border: solid 1px #CF649A
+        border-radius: 45px
+      .js
+        background-color: #FCDC00
+        border: solid #FCDC00 1px
+        border-radius: 45px
+      .css
+        background-color: #0D8BF2
+        border: solid #0D8BF2 1px
+        border-radius: 45px
+        
