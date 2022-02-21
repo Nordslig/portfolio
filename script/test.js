@@ -23,3 +23,5 @@ document.querySelector('.submit').addEventListener('click', (e) =>{
   // alert(`Wiadomość wysłana o godzinie ${messageSendTime}, przez użytkownika ${senderName}`)
 
 })
+
+document.querySelector('.fas').addEventListener('click', () => console.log(`Działa`))
