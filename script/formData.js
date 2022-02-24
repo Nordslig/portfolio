@@ -10,12 +10,17 @@ document.querySelector('.submit').addEventListener('click', (e) =>{
     mail: senderMail, 
     message: senderMessage,
   };
+<<<<<<< HEAD
 
   if (noEmptyInput(formData)) null
   else {
     alert(`Uzupełnij wszystkie pola!`)
     return
   }
+=======
+  
+  console.warn('Message sent!');
+>>>>>>> 5b7ec5b0da784800e94e67cf9834a1769044ad43
 
   localStorage.setItem('MessageData', JSON.stringify(formData));
 
@@ -23,6 +28,7 @@ document.querySelector('.submit').addEventListener('click', (e) =>{
 
   printMessage();  
 
+<<<<<<< HEAD
 });
 
 const noEmptyInput = (formData) =>
@@ -33,3 +39,6 @@ const noEmptyInput = (formData) =>
     return true;
   }
 }
+=======
+});
+>>>>>>> 5b7ec5b0da784800e94e67cf9834a1769044ad43

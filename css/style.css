@@ -1,0 +1,686 @@
+@-webkit-keyframes skillFillUp {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes skillFillUp {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes skillFillUpReverse {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes skillFillUpReverse {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 77vw;
+  height: 60vw;
+  margin: 5% 0% 0% 17%;
+  padding: 0.8rem;
+  padding-left: 1.5rem;
+  background-color: #07315d;
+}
+
+header h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
+  color: #eeb574;
+}
+
+header h2 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  color: white;
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+  header {
+    width: 67vw;
+    height: 40vw;
+    max-height: 20em;
+    white-space: nowrap;
+    padding: 2rem;
+    margin-left: 30%;
+  }
+  header h1 {
+    font-size: 2.8rem;
+  }
+  header h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    height: 40vw;
+    max-height: 20em;
+    width: 66vw;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-left: 30%;
+  }
+  header h1 {
+    font-size: 3.3em;
+  }
+  header h2 {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  header {
+    max-height: 40vw;
+  }
+  header h1 {
+    font-size: 4em;
+  }
+  header h2 {
+    font-size: 2.8em;
+  }
+}
+
+@media (min-width: 1280px) {
+  header {
+    max-height: 30vw;
+    max-width: 50vw;
+    margin-top: 2%;
+    margin-left: 40%;
+  }
+  header h1 {
+    font-size: 4.5em;
+  }
+  header h2 {
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 1536px) {
+  header {
+    max-height: 25vw;
+    max-width: 43vw;
+    margin-left: 50%;
+  }
+  header h1 {
+    font-size: 5em;
+  }
+  header h2 {
+    font-size: 3em;
+  }
+}
+
+.about {
+  width: 80vw;
+  margin-top: 5%;
+  margin-left: 4%;
+  padding: 1em;
+  background-color: #eeb574;
+  color: #07315d;
+}
+
+.about h2 {
+  letter-spacing: .05em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.3em;
+}
+
+.about p {
+  padding-top: .4em;
+  padding-bottom: .3em;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.3em;
+  color: black;
+}
+
+.about p a {
+  padding-left: .2em;
+  padding-right: .2em;
+  color: #eeb574;
+  text-decoration: none;
+  background-color: #07315d;
+}
+
+.about p .scrollToContact {
+  padding-left: .2em;
+  padding-right: .2em;
+  color: #eeb574;
+  text-decoration: none;
+  background-color: #07315d;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .about h2 {
+    font-size: 2.6em;
+  }
+  .about p {
+    font-size: 1.6em;
+  }
+}
+
+@media (min-width: 1280px) {
+  .about {
+    margin-top: 2%;
+  }
+  .about h2 {
+    font-size: 2.9em;
+  }
+  .about p {
+    font-size: 1.9em;
+  }
+}
+
+.skills {
+  margin-top: 5%;
+}
+
+.skills h2 {
+  margin-left: 20%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  padding: .5rem;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  background-color: #07315d;
+  color: #eeb574;
+}
+
+.skills .skills-flex-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skills .skills-flex-parent h3 {
+  padding: .5rem;
+  letter-spacing: .2rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+}
+
+.skills .skills-flex-parent ul {
+  margin: 1%;
+}
+
+.skills .skills-flex-parent li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3.2rem;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding: .2rem;
+  list-style: none;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.3rem;
+}
+
+.skills .skills-flex-parent li span {
+  max-width: 50%;
+}
+
+.skills .skills-flex-parent li .skill-zone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 1.1rem;
+  width: 10rem;
+  border-radius: 90px;
+}
+
+.skills .skills-flex-parent li .skill-zone .bar {
+  width: 18%;
+  border: black solid 2px;
+  -webkit-transform: skew(-10deg);
+          transform: skew(-10deg);
+  overflow: hidden;
+}
+
+.skills .skills-flex-parent li .skill-zone .bar:nth-of-type(1) {
+  border-top-left-radius: 45px;
+  border-bottom-left-radius: 45px;
+}
+
+.skills .skills-flex-parent li .skill-zone .bar:nth-last-of-type(1) {
+  border-top-right-radius: 45px;
+  border-bottom-right-radius: 45px;
+}
+
+.skills .skills-flex-parent li .skill-zone .bar .level {
+  height: 100%;
+  -webkit-animation: skillFillUp 1s .4s both;
+          animation: skillFillUp 1s .4s both;
+}
+
+.skills .skills-flex-parent li .skill-zone .bar .level.beg {
+  background-color: #eeb574;
+}
+
+.skills .skills-flex-parent li .skill-zone .bar .level.inter {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+  background-color: #f6a446;
+}
+
+.skills .skills-flex-parent li .skill-zone .bar .level.adv {
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
+  background-color: #2e7ed3;
+}
+
+.skills .skills-flex-parent li .skill-zone .bar .level.exp {
+  -webkit-animation-delay: 4.6s;
+          animation-delay: 4.6s;
+  background-color: #2c5c8f;
+}
+
+.skills .skills-flex-parent li .skill-zone .bar .level.leg {
+  -webkit-animation-delay: 5.8s;
+          animation-delay: 5.8s;
+  background-color: #0a3a6d;
+}
+
+.skills .skills-flex-parent .skills-programing-parent .line {
+  height: .2rem;
+  background-color: #07315d;
+}
+
+.skills .skills-flex-parent .skills-general-parent .line {
+  height: .2rem;
+  background-color: #eeb574;
+}
+
+.skills .skills-flex-parent .skills-general-parent h3 {
+  text-align: right;
+}
+
+.skills .skills-flex-parent .skills-general-parent ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skills .skills-flex-parent .skills-general-parent ul .skill-zone {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.skills .skills-flex-parent .skills-general-parent ul .skill-zone .bar:nth-of-type(1) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 45px;
+  border-bottom-right-radius: 45px;
+}
+
+.skills .skills-flex-parent .skills-general-parent ul .skill-zone .bar:nth-last-of-type(1) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 45px;
+  border-bottom-left-radius: 45px;
+}
+
+.skills .skills-flex-parent .skills-general-parent ul .skill-zone .bar .level {
+  -webkit-animation: none;
+          animation: none;
+}
+
+.skills .skills-flex-parent .skills-general-parent ul .skill-zone .bar .level.beg {
+  background-color: #eeb574;
+}
+
+.skills .skills-flex-parent .skills-general-parent ul li {
+  text-align: right;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.projects {
+  margin-top: 5%;
+}
+
+.projects .arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  border: none;
+  background: transparent;
+}
+
+.projects .arrow span {
+  padding: .6rem;
+  padding-top: .7rem;
+  font-size: 1rem;
+  font-style: italic;
+  color: #55575a;
+}
+
+.projects .arrow .fas {
+  font-size: 2.5rem;
+  color: #07315d;
+}
+
+.projects .intro {
+  width: 80vw;
+  margin-left: 4%;
+  padding: 1rem;
+  background-color: #eeb574;
+}
+
+.projects .intro h2 {
+  font-size: 2.3rem;
+  letter-spacing: 0.1rem;
+  font-family: "Montserrat", sans-serif;
+  color: #07315d;
+}
+
+.projects .intro p {
+  padding-top: .4rem;
+  padding-bottom: .3rem;
+  font-size: 1.2rem;
+  font-family: "Roboto Mono", monospace;
+}
+
+.projects .project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.projects .project h3 {
+  margin-top: 3%;
+  margin-left: 40%;
+  margin-right: 7.5%;
+  margin-bottom: 3%;
+  padding: .5rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.7rem;
+  color: #eeb574;
+  background-color: #07315d;
+}
+
+.projects .project img {
+  width: 85%;
+  margin: 0 auto;
+  font-family: "Roboto Mono", monospace;
+}
+
+.projects .project p {
+  width: 80%;
+  margin-top: 3%;
+  margin-left: 7.5%;
+  padding: .6rem;
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.3rem;
+  color: #07315d;
+  background-color: #eeb574;
+}
+
+.projects .project p span {
+  font-weight: 700;
+}
+
+.projects .project p.tech {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 0 2.5%;
+  background-color: transparent;
+}
+
+.projects .project p.tech span {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 2% 3%;
+  text-align: center;
+  font-weight: 400;
+  color: "Montserrat", sans-serif;
+  background-color: transparent;
+}
+
+.projects .project p.tech .sass {
+  border: solid 3px #CF649A;
+  border-radius: 45px;
+}
+
+.projects .project p.tech .js {
+  border: solid #FCDC00 3px;
+  border-radius: 45px;
+}
+
+.projects .project p.tech .css {
+  border: solid #0D8BF2 3px;
+  border-radius: 45px;
+}
+
+.projects .project p.tech .html {
+  border: solid #E54C21 3px;
+  border-radius: 45px;
+}
+
+.contact {
+  margin-top: 5%;
+  color: #eeb574;
+}
+
+.contact h2 {
+  margin-left: 20%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  padding: .5rem;
+  font-size: 2.1rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  background-color: #07315d;
+}
+
+.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Roboto Mono", monospace;
+  color: black;
+}
+
+.contact form .inputs,
+.contact form .message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact form .inputs label, .contact form .inputs input[type=submit],
+.contact form .message label,
+.contact form .message input[type=submit] {
+  min-width: 60%;
+  padding: .3rem .5rem;
+  margin: 2% 5% 2% 2%;
+  background-color: #eeb574;
+  font-size: 1.3rem;
+}
+
+.contact form .inputs input[type=submit],
+.contact form .message input[type=submit] {
+  border-bottom: 2px solid #07315d;
+}
+
+.contact form .inputs input[type=text],
+.contact form .inputs input[type=email],
+.contact form .message input[type=text],
+.contact form .message input[type=email] {
+  width: 70%;
+  margin-left: 30%;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.contact form .inputs input, .contact form .inputs textarea,
+.contact form .message input,
+.contact form .message textarea {
+  margin: 2% 5% 2% 0;
+  padding: .2rem;
+  border: none;
+  background-color: #07315d;
+  font-family: "Roboto Mono", monospace;
+}
+
+.contact form .inputs textarea,
+.contact form .message textarea {
+  height: 10rem;
+  width: 80%;
+  margin: 2% auto;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.contact form .inputs textarea::-webkit-input-placeholder,
+.contact form .inputs input::-webkit-input-placeholder,
+.contact form .message textarea::-webkit-input-placeholder,
+.contact form .message input::-webkit-input-placeholder {
+  color: rgba(246, 237, 237, 0.438);
+}
+
+.contact form .inputs textarea:-ms-input-placeholder,
+.contact form .inputs input:-ms-input-placeholder,
+.contact form .message textarea:-ms-input-placeholder,
+.contact form .message input:-ms-input-placeholder {
+  color: rgba(246, 237, 237, 0.438);
+}
+
+.contact form .inputs textarea::-ms-input-placeholder,
+.contact form .inputs input::-ms-input-placeholder,
+.contact form .message textarea::-ms-input-placeholder,
+.contact form .message input::-ms-input-placeholder {
+  color: rgba(246, 237, 237, 0.438);
+}
+
+.contact form .inputs textarea::placeholder,
+.contact form .inputs input::placeholder,
+.contact form .message textarea::placeholder,
+.contact form .message input::placeholder {
+  color: rgba(246, 237, 237, 0.438);
+}
+
+.contact form .inputs textarea:focus,
+.contact form .inputs input:focus,
+.contact form .message textarea:focus,
+.contact form .message input:focus {
+  outline: none;
+}
+
+.contact form .inputs input[type=submit]:active,
+.contact form .message input[type=submit]:active {
+  border-bottom: none;
+  border-top: 2px solid #eeb574;
+}
+
+footer {
+  width: 100%;
+  margin-top: 5%;
+  background-color: #07315d;
+}
+
+footer h2 {
+  font-family: "Roboto Mono", monospace;
+  letter-spacing: .2rem;
+  text-align: center;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #fdfbf9;
+}
+/*# sourceMappingURL=style.css.map */
