@@ -10,8 +10,12 @@ document.querySelector('.submit').addEventListener('click', (e) =>{
     mail: senderMail, 
     message: senderMessage,
   };
-  
-  console.warn('Message sent!');
+
+  if (noEmptyInput(formData)) null
+  else {
+    alert(`Uzupełnij wszystkie pola!`)
+    return
+  }
 
   localStorage.setItem('MessageData', JSON.stringify(formData));
 
@@ -20,3 +24,12 @@ document.querySelector('.submit').addEventListener('click', (e) =>{
   printMessage();  
 
 });
+
+const noEmptyInput = (formData) =>
+{
+  if (!formData.name || !formData.mail || !formData.message) {
+    return false;
+  }else{
+    return true;
+  }
+}
