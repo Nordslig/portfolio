@@ -10,10 +10,14 @@
     text-align: center
     background-color: $main-color
     color: $secondary-color
+    &.ngMode
+      background-color: $secondary-color
+      color: $main-color
   .skills-flex-parent
     display: flex
     flex-direction: column
     h3
+      color: #121a22
       padding: .5rem
       letter-spacing: .2rem
       font-family: $main-font
@@ -33,6 +37,10 @@
       font-size: 1.3rem
       span
         max-width: 50%
+        color: #1b3147
+        font-weight: 600
+        &.ngMode
+          color: #fdfbf9
       .skill-zone
         display: flex
         flex-direction: row
@@ -45,6 +53,8 @@
           border: black solid 2px
           transform: skew(-10deg)
           overflow: hidden
+          &.ngMode
+            border-color: $secondary-color
           &:nth-of-type(1)
             border-top-left-radius: 45px
             border-bottom-left-radius: 45px

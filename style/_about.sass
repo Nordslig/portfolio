@@ -3,8 +3,12 @@
   margin-top: 5%
   margin-left: 4% 
   padding: 1em
-  background-color: $secondary-color
+  // background-color: $main-color
+  // color: $secondary-color
+  // color: #313941
   color: $main-color
+  background-color: $secondary-color
+  &.ngMode
   h2
     letter-spacing: .05em
     font-family: $main-font
@@ -14,20 +18,31 @@
     padding-bottom: .3em
     font-family: $secondary-font 
     font-size: 1.3em
-    color: black
+    color: #121a22
+    // color: #1A232C
+    &.ngMode
+      color: #153250
     a
       padding-left: .2em
       padding-right: .2em
-      color: $secondary-color
       text-decoration: none
-      background-color: $main-color
-    .scrollToContact
-      padding-left: .2em 
-      padding-right: .2em 
       color: $secondary-color
-      text-decoration: none
       background-color: $main-color
-      white-space: nowrap
+      &.ngMode
+        color: $secondary-color
+        background-color: #153250
+  .scrollToContact
+    display: block
+    width: 80%
+    margin: 2% auto 0
+    text-align: center
+    font-family: $secondary-font
+    font-size: 1.4rem
+    color: $secondary-color
+    background-color: $main-color
+    &.ngMode
+      color: $secondary-color
+      background-color: $main-color
 @media #{$tablet}
   .about
     h2

@@ -8,8 +8,8 @@
     border: none
     background: transparent
     span
-      padding: .6rem
-      padding-top: .7rem
+      margin: .2rem
+      margin-top: .3rem
       font-size: 1rem
       font-style: italic
       color: #55575a
@@ -20,18 +20,27 @@
     width: 80vw
     margin-left: 4%
     padding: 1rem
-    background-color: $secondary-color
+    background-color: $main-color
+    &.ngMode
+      background-color: $secondary-color
     h2
       font-size: 2.3rem
       letter-spacing: 0.1rem
       font-family: $main-font
-      color: $main-color
+      color: $secondary-color
+      &.ngMode
+        color: $main-color
     p
       padding-top: .4rem
       padding-bottom: .3rem
       font-size: 1.2rem
       font-family: $secondary-font
+      color: #f3ddc3
+      &.ngMode 
+        color: $main-color
   .project
+    display: none
+  .project.visible
     display: flex
     flex-direction: column
     h3
@@ -44,45 +53,46 @@
       text-align: center
       font-family: $main-font
       font-size: 1.7rem
-      color: $secondary-color
-      background-color: $main-color
+      color: $main-color
+      background-color: $secondary-color
     img
       width: 85%
       margin: 0 auto
       font-family: $secondary-font
     p
       width: 80%
-      margin-top: 3%
-      margin-left: 7.5%
+      // margin-top: 3%
+      // margin-left: 7.5%
+      margin: 3% auto 0
       // margin-right: 5% 
       padding: .6rem
       font-family: $secondary-font
       font-size: 1.3rem
-      color: $main-color
-      background-color: $secondary-color
+      color: #f3ddc3
+      background-color: $main-color
       span
-        font-weight: 700
+        font-weight: 600
+        color: #ddaa6b
     p.tech
       display: flex
       flex-wrap: wrap
-      margin: 0 0 0 2.5%
       background-color: transparent
       span
+        max-width: 60%
         flex-grow: 1
         margin: 2% 3%
         text-align: center
         font-weight: 400
-        color: $main-font
+        color: #121a22
         background-color: transparent
+        border-radius: 45px
       .sass
         border: solid 3px #CF649A
-        border-radius: 45px
       .js
         border: solid #FCDC00 3px
-        border-radius: 45px
       .css
         border: solid #0D8BF2 3px
-        border-radius: 45px
       .html
-        border: solid #E54C21 3px
-        border-radius: 45px       
+        border: solid #E54C21 3px   
+      .react
+        border: solid #61DAFB 3px
