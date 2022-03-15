@@ -49,18 +49,37 @@
         width: 10rem
         border-radius: 90px
         .bar
-          width: 18%
-          border: black solid 2px
-          transform: skew(-10deg)
+          width: 100%
+          border: rgb(26, 35, 44) solid 2px
+          // transform: skew(-10deg)
           overflow: hidden
-          &.ngMode
-            border-color: $secondary-color
-          &:nth-of-type(1)
-            border-top-left-radius: 45px
-            border-bottom-left-radius: 45px
-          &:nth-last-of-type(1)
-            border-top-right-radius: 45px
-            border-bottom-right-radius: 45px
+          background-color: rgb(27, 49, 71)
+          background-image: linear-gradient(to right, rgb(243, 221, 195) 70%,
+          rgb(27, 49, 71))
+          background-size: 0
+          background-repeat: no-repeat
+          border-top-left-radius: 45px
+          border-bottom-left-radius: 45px
+          border-top-right-radius: 45px
+          border-bottom-right-radius: 45px
+          // &.beg
+          //   background-size: 20%
+          // &.nov
+          //   background-size: 40%
+          // &.int
+          //   background-size: 60%
+          // &.adv
+          //   background-size: 80%
+          // &.elite
+          //   background-size: 100%
+          // &.ngMode
+            // border-color: $secondary-color
+          // &:nth-of-type(1)
+          //   border-top-left-radius: 45px
+          //   border-bottom-left-radius: 45px
+          // &:nth-last-of-type(1)
+          //   border-top-right-radius: 45px
+          //   border-bottom-right-radius: 45px
           .level
             height: 100%
             animation: skillFillUp 1s .4s both 
@@ -95,17 +114,17 @@
         flex-direction: column
         .skill-zone
           flex-direction: row-reverse
-          .bar
-            &:nth-of-type(1) 
-              border-top-left-radius: 0
-              border-bottom-left-radius: 0
-              border-top-right-radius: 45px
-              border-bottom-right-radius: 45px
-            &:nth-last-of-type(1)
-              border-top-right-radius: 0
-              border-bottom-right-radius: 0
-              border-top-left-radius: 45px
-              border-bottom-left-radius: 45px
+          // .bar
+          //   &:nth-of-type(1) 
+          //     border-top-left-radius: 0
+          //     border-bottom-left-radius: 0
+          //     border-top-right-radius: 45px
+          //     border-bottom-right-radius: 45px
+          //   &:nth-last-of-type(1)
+          //     border-top-right-radius: 0
+          //     border-bottom-right-radius: 0
+          //     border-top-left-radius: 45px
+          //     border-bottom-left-radius: 45px
             .level 
               // animation: skillFillUpReverse 1s .4s both
               animation: none
