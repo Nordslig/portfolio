@@ -10,9 +10,6 @@
     text-align: center
     background-color: $main-color
     color: $secondary-color
-    &.ngMode
-      background-color: $secondary-color
-      color: $main-color
   .skills-flex-parent
     display: flex
     flex-direction: column
@@ -39,8 +36,6 @@
         max-width: 50%
         color: #1b3147
         font-weight: 600
-        &.ngMode
-          color: #fdfbf9
       .skill-zone
         display: flex
         flex-direction: row
@@ -51,7 +46,6 @@
         .bar
           width: 100%
           border: rgb(26, 35, 44) solid 2px
-          // transform: skew(-10deg)
           overflow: hidden
           background-color: rgb(27, 49, 71)
           background-image: linear-gradient(to right, rgb(243, 221, 195) 70%,
@@ -62,47 +56,23 @@
           border-bottom-left-radius: 45px
           border-top-right-radius: 45px
           border-bottom-right-radius: 45px
-          // &.beg
-          //   background-size: 20%
-          // &.nov
-          //   background-size: 40%
-          // &.int
-          //   background-size: 60%
-          // &.adv
-          //   background-size: 80%
-          // &.elite
-          //   background-size: 100%
-          // &.ngMode
-            // border-color: $secondary-color
-          // &:nth-of-type(1)
-          //   border-top-left-radius: 45px
-          //   border-bottom-left-radius: 45px
-          // &:nth-last-of-type(1)
-          //   border-top-right-radius: 45px
-          //   border-bottom-right-radius: 45px
-          .level
-            height: 100%
-            animation: skillFillUp 1s .4s both 
-            &.beg
-              background-color: #eeb574
-            &.inter
-              animation-delay: 1.8s
-              background-color: #f6a446
-            &.adv
-              animation-delay: 3.2s
-              background-color: #2e7ed3
-            &.exp
-              animation-delay: 4.6s
-              background-color: #2c5c8f
-            &.leg
-              animation-delay: 5.8s
-              background-color: #0a3a6d
+          animation-duration: 1.4s
+          animation-delay: 10s
+          animation-fill-mode: both
+          &.animationFillNov
+            animation-name: fillUpBarNov
+          &.animationFillBeg
+            animation-name: fillUpBarBeg
+          &.animationFillInt
+            animation-name: fillUpBarInt
+          &.animationFillAdv
+            animation-name: fillUpBarAdv
+          &.animationFillElite
+            animation-name: fillUpBarElite
     .skills-programing-parent
       .line
         height: .2rem
         background-color: $main-color
-        .level
-          &.beg
     .skills-general-parent 
       .line
         height: .2rem
@@ -114,22 +84,6 @@
         flex-direction: column
         .skill-zone
           flex-direction: row-reverse
-          // .bar
-          //   &:nth-of-type(1) 
-          //     border-top-left-radius: 0
-          //     border-bottom-left-radius: 0
-          //     border-top-right-radius: 45px
-          //     border-bottom-right-radius: 45px
-          //   &:nth-last-of-type(1)
-          //     border-top-right-radius: 0
-          //     border-bottom-right-radius: 0
-          //     border-top-left-radius: 45px
-          //     border-bottom-left-radius: 45px
-            .level 
-              // animation: skillFillUpReverse 1s .4s both
-              animation: none
-              &.beg
-                background-color: #eeb574
         & li
           text-align: right    
           flex-direction: row-reverse
