@@ -32,7 +32,7 @@
         width: 70%
         margin-left: 30%
         text-align: center
-        font-size: 1rem
+        font-size: 1.2rem
         color: #f3ddc3
       input, textarea
         margin: 2% 5% 2% 0
@@ -44,7 +44,7 @@
         height: 10rem 
         width: 80%
         margin: 2% auto
-        font-size: 1.2rem
+        font-size: 1.3rem
         color: #f3ddc3
       textarea::placeholder,
       input::placeholder
@@ -55,3 +55,17 @@
       input[type=submit]:active      
         border-bottom: none
         border-top: 2px solid $secondary-color
+
+@media #{$phone-landscape}
+  .contact
+    width: 80vw 
+    margin: 0 auto
+    form
+      .inputs
+        label
+          width: 40%
+          min-width: 0
+        input[type=text],
+        input[type=email]
+          width: 50%
+          margin-left: 50%
