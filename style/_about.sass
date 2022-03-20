@@ -5,7 +5,6 @@
   padding: 1em
   color: $main-color
   background-color: $secondary-color
-  &.ngMode
   h2
     letter-spacing: .05em
     font-family: $main-font
@@ -16,17 +15,12 @@
     font-family: $secondary-font 
     font-size: 1.3em
     color: #121a22
-    &.ngMode
-      color: #153250
     a
       padding-left: .2em
       padding-right: .2em
       text-decoration: none
       color: $secondary-color
       background-color: $main-color
-      &.ngMode
-        color: $secondary-color
-        background-color: #153250
   .scrollToContact
     display: block
     width: 80%
@@ -36,15 +30,15 @@
     font-size: 1.4rem
     color: $secondary-color
     background-color: $main-color
-    &.ngMode
-      color: $secondary-color
-      background-color: $main-color
+
 @media #{$tablet}
   .about
     h2
-      font-size: 2.6em
+      font-size: 2.6rem
     p
-      font-size: 1.6em
+      font-size: 1.6rem
+    .scrollToContact
+      font-size: 1.6rem
 
 @media #{$monitor-small}
   .about
