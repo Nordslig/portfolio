@@ -56,8 +56,7 @@
           border-bottom-left-radius: 45px
           border-top-right-radius: 45px
           border-bottom-right-radius: 45px
-          animation-duration: 1.4s
-          animation-delay: 10s
+          animation-duration: 1s
           animation-fill-mode: both
           &.animationFillNov
             animation-name: fillUpBarNov
@@ -134,3 +133,30 @@
         .skill-zone
           .bar
             height: 1.3rem
+
+@media #{$monitor-small}
+  .skills
+    h2
+      margin-left: 50% 
+      margin-right: 3%
+      font-size: 2.5rem
+    .skills-flex-parent
+      max-width: 720px
+      margin: 0 auto
+      h3
+        font-size: 2.3rem
+      .skills-programing-parent,
+      .skills-general-parent
+        .line
+          height: .5rem
+      li
+        span
+          flex-grow: 1
+          font-size: 1.8rem
+        .skill-zone
+          flex-grow: 2
+          justify-content: flex-end
+          .bar
+            width: 20rem
+            height: 1.5rem
+  

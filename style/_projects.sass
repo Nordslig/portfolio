@@ -44,10 +44,8 @@
     display: flex
     flex-direction: column
     h3
-      margin-top: 3%
-      margin-left: 40%
-      margin-right: 7.5%
-      margin-bottom: 3%
+      width: 50%
+      margin: 3% 0 3% 50%
       padding: .5rem
       text-align: center
       font-family: $main-font
@@ -102,6 +100,7 @@
           font-size: 1.5rem 
       .project.visible 
         h3 
+          margin-left: 40%
           font-size: 2.4rem 
         img 
           width: auto 
@@ -130,3 +129,25 @@
     .arrow
       span
         font-size: 1.1rem
+
+@media #{$monitor-small}
+  .projects
+    .intro
+      width: 75%
+      h2
+        font-size: 2.8rem
+      p
+        font-size: 1.6rem
+    .project.visible
+      h3
+        width: 40%
+        margin-left: 60%
+        font-size: 2.5rem
+      img
+        width: auto
+      p
+        font-size: 1.8rem
+    .arrow
+      span, 
+      i
+        font-size: 1.4rem
