@@ -34,6 +34,8 @@
         font-size: 1.3rem
       input[type=submit]
         border-bottom: 2px solid $main-color
+        transition-duration: .3s
+        transition-property: background-color, color 
       input[type=text], 
       input[type=email]
         width: 70%
@@ -61,7 +63,10 @@
         outline: none
       input[type=submit]:active      
         border-bottom: none
-        border-top: 2px solid $secondary-color
+        border-top: 2px solid #fdfbf9
+      input[type=submit]:hover
+        background-color: $main-color 
+        color: $secondary-color
 
 @media #{$phone-landscape}
   .contact

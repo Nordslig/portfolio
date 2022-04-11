@@ -88,16 +88,32 @@
         color: #121a22
         background-color: transparent
         border-radius: 45px
+        cursor: default
+        transition-duration: .3s
+        transition-property: background-color, color
       .sass
         border: solid 3px #CF649A
+        &:hover
+          background-color: #CF649A
+          color: #fdfbf9
       .js
         border: solid #ebcd00 3px
+        &:hover
+          background-color: #ebcd00
       .css
         border: solid #0D8BF2 3px
+        &:hover
+          background-color: #0D8BF2
+          color: #fdfbf9
       .html
-        border: solid #E54C21 3px   
+        border: solid #E54C21 3px
+        &:hover
+          background-color: #E54C21
+          color: #fdfbf9
       .react
         border: solid #61DAFB 3px
+        &:hover
+          background-color: #61DAFB
 
 @media #{$phone-landscape}
   .projects
