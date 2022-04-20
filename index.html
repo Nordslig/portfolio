@@ -4,17 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="HTML, CSS, JS, React, front-end, git, developer, web developer, front-end developer">
-    <meta name="description" content="Bartosz Pindel - front-end developer">
-    <meta name="author" content="Bartosz Pindel">
+    <meta
+      name="keywords"
+      content="HTML, CSS, JS, React, front-end, git, developer, web developer, front-end developer"
+    />
+    <meta name="description" content="Bartosz Pindel - front-end developer" />
+    <meta name="author" content="Bartosz Pindel" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/all.min.css"/>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
     <title>Najlepsze strony w najlepszych cenach!</title>
   </head>
 
@@ -28,7 +31,8 @@
       <p>
         Jestem Bartosz. Zajmuję się tworzeniem stron internetowych od
         front-endu. Jeśli chcesz zobaczyć moje projekty to zapraszam na
-        <a href="https://github.com/Nordslig" target="_blank">Githuba</a> lub trochę niżej. Jeśli zainteresujesz się współpracą ze mną
+        <a href="https://github.com/Nordslig" target="_blank">Githuba</a> lub
+        trochę niżej. Jeśli zainteresujesz się współpracą ze mną
       </p>
       <span class="scrollToContact">napisz do mnie</span>
     </div>
@@ -43,11 +47,13 @@
               <span>HTML</span>
               <div class="skill-zone">
                 <div class="bar int"></div>
+              </div>
             </li>
             <li>
               <span>CSS</span>
               <div class="skill-zone">
                 <div class="bar int"></div>
+              </div>
             </li>
             <li>
               <span>JS</span>
@@ -73,20 +79,23 @@
                 <div class="bar int"></div>
               </div>
             </li>
-            <li>                            
+            <li>
               <span>Organizacja</span>
               <div class="skill-zone">
                 <div class="bar adv"></div>
+              </div>
             </li>
             <li>
-               <span>Praca pod presją czasu</span>
+              <span>Praca pod presją czasu</span>
               <div class="skill-zone">
                 <div class="bar nov"></div>
+              </div>
             </li>
             <li>
               <span>Komunikacja</span>
               <div class="skill-zone">
                 <div class="bar adv"></div>
+              </div>
             </li>
           </ul>
         </div>
@@ -102,8 +111,10 @@
       </div>
       <div class="project visible">
         <h3>Portfolio</h3>
-        <img src="img/animalTest.jpg" alt="zdjęcie strony"/>
-        <p> Pierwszy projekt, to ta strona porftiolio. Wszystkie elementy wykonałem sam. <span>Technologie:</span> 
+        <img src="img/animalTest.jpg" alt="zdjęcie strony" />
+        <p>
+          Pierwszy projekt, to ta strona porftiolio. Wszystkie elementy
+          wykonałem sam. <span>Technologie:</span>
         </p>
         <p class="tech">
           <span class="sass">Sass</span>
@@ -114,8 +125,10 @@
       </div>
       <div class="project">
         <h3>Weather API</h3>
-        <img src="img/animalTest2.jpg" alt="zdjęcie strony"/>
-        <p> Kolejnym projekt, który zrobiłem, jest Weather API, do odczytywania pogody. Całość wykonana przeze mnie. <span>Technologie:</span> 
+        <img src="img/animalTest2.jpg" alt="zdjęcie strony" />
+        <p>
+          Kolejnym projekt, który zrobiłem, jest Weather API, do odczytywania
+          pogody. Całość wykonana przeze mnie. <span>Technologie:</span>
         </p>
         <p class="tech">
           <span class="react">React</span>
@@ -125,9 +138,8 @@
       </div>
       <div class="project">
         <h3>Mała funkcja</h3>
-        <img src="img/animalTest3.jpg" alt="zdjęcie strony"/>
-        <p> Mini funkcja jako dodatek do stron. <span>Technologie:</span> 
-        </p>
+        <img src="img/animalTest3.jpg" alt="zdjęcie strony" />
+        <p>Mini funkcja jako dodatek do stron. <span>Technologie:</span></p>
         <p class="tech">
           <span class="html">HTML</span>
           <span class="css">CSS</span>
@@ -135,11 +147,6 @@
         </p>
       </div>
       <div class="flex-for-buttondot">
-        <!-- <div class="number-of-projects">
-          <div class="dot active"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-        </div> -->
         <button class="arrow">
           <span>Następny projekt: <span class="nextProjectTitle"></span></span>
           <i class="fas fa-angle-double-right"></i>
@@ -147,14 +154,15 @@
       </div>
     </div>
     <div class="contact">
-      <img src="img/notworkingtransparent.png" alt="ostrzeżenie">
+      <img src="img/notworkingtransparent.png" alt="ostrzeżenie" />
       <h2>Kontakt</h2>
-      <form action="">
+      <form action="/action_post.php" method="post">
         <div class="inputs">
           <label for="name">Imię:</label>
           <input
             type="text"
             name="name"
+            id="name"
             placeholder="Jan Kowalski"
             autocomplete="off"
             class="sender"
@@ -163,6 +171,7 @@
           <input
             type="email"
             name="email"
+            id="email"
             placeholder="jan.kowalski@gmail.com"
             autocomplete="off"
             class="mail"
@@ -172,15 +181,13 @@
           <label for="mtext">Treść wiadomości:</label>
           <textarea
             name="mtext"
+            id="mtext"
             style="resize: none"
             placeholder="Tekst wiadomości"
             autocomplete="off"
             class="messageText"
           ></textarea>
-          <input
-            class="submit"
-            type="submit"
-            value="Wyślij wiadomość!"/>
+          <input class="submit" type="submit" value="Wyślij wiadomość!" />
         </div>
       </form>
     </div>
