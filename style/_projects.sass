@@ -4,9 +4,10 @@
     display: flex
     justify-content: center
     align-items: center
+    margin-right: 7.5%
     border: none
     background: transparent
-  .flex-for-buttondot 
+  .flexForButton 
     display: flex 
     justify-content: flex-end
     .number-of-projects 
@@ -14,14 +15,6 @@
       justify-content: space-evenly
       align-items: center
       width: 20%
-      .dot 
-        width: 4vw
-        height: 4vw
-        border-radius: 45px
-        background-color: $secondary-color
-        border: 1px solid $main-color
-        &.active
-          background-color: $main-color
     span
       margin: .2rem
       font-size: 1rem
@@ -65,23 +58,31 @@
       margin: 0 auto
       font-family: $secondary-font
     p
-      width: 80%
-      margin: 3% auto 0
-      padding: .6rem
       font-family: $secondary-font
       font-size: 1.3rem
+    p.desc
+      width: 80%
+      height: 12rem
+      margin: 3% auto 0
+      padding: .6rem
       color: #f3ddc3
       background-color: $main-color
+      overflow-x: hidden
+      overflow-y: auto
       span
+        display: block
         font-weight: 600
         color: #ddaa6b
     p.tech
       display: flex
+      flex-direction: row
+      justify-content: center
       flex-wrap: wrap
+      width: auto
+      margin-top: 2%
       background-color: transparent
       span
-        max-width: 60%
-        flex-grow: 1
+        width: 30%
         margin: 2% 3%
         text-align: center
         font-weight: 400
@@ -97,6 +98,7 @@
           background-color: #CF649A
           color: #fdfbf9
       .js
+        width: 50%
         border: solid #ebcd00 3px
         &:hover
           background-color: #ebcd00
@@ -117,19 +119,22 @@
 
 @media #{$phone-landscape}
   .projects
-    .flex-for-buttondot
-      .number-of-projects
-        .dot
-          width: 2vw
-          height:  2vw
+    .project.visible
+      p.desc
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+      p.tech
+        span
+          width: 20%
+          margin: 1% 2%
+          &.js
+            width: 30%
+
+
 
 @media #{$tablet}
     .projects 
-      .flex-for-buttondot
-        .number-of-projects
-          .dot
-            width: 3vw
-            height:  3vw
       .intro 
         h2 
           font-size: 2.7rem 
@@ -142,6 +147,7 @@
         img 
           width: auto 
         p 
+          height: 12rem
           font-size: 1.6rem 
           &.tech
             margin-top: 0
@@ -151,11 +157,6 @@
 
 @media #{$tablet-landscape}
   .projects
-    .flex-for-buttondot
-      .number-of-projects
-        .dot
-          width: 2vw
-          height:  2vw
     .intro
       h2
         font-size: 2.6rem
@@ -167,18 +168,19 @@
       img
         width: auto
       p
+        height: auto
         font-size: 1.5rem
+        &.tech
+          span
+            max-width: 15%
+            &.js
+              max-width: 30%
     .arrow
       span
         font-size: 1.1rem
 
 @media #{$monitor-small}
   .projects
-    .flex-for-buttondot
-      .number-of-projects
-        .dot
-          width: 2vw
-          height:  2vw
     .intro
       width: 75%
       h2
@@ -201,8 +203,5 @@
 
 @media #{$monitor-large}
   .projects
-    .flex-for-buttondot
-      .number-of-projects
-        .dot
-          width: 1vw
-          height:  1vw
+    .project
+      p
