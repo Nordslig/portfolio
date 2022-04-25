@@ -75,7 +75,6 @@
         color: #ddaa6b
     p.tech
       display: flex
-      flex-direction: row
       justify-content: center
       flex-wrap: wrap
       width: auto
@@ -146,11 +145,16 @@
           font-size: 2.4rem 
         img 
           width: auto 
-        p 
-          height: 12rem
+        p
           font-size: 1.6rem 
+          &.desc
+            height: 12rem
           &.tech
             margin-top: 0
+            span
+              width: 20%
+              &.js
+                width: 30%
       .arrow 
         span 
           font-size: 1.2rem
@@ -168,9 +172,14 @@
       img
         width: auto
       p
-        height: auto
         font-size: 1.5rem
+        &.desc
+          display: flex
+          flex-direction: column
+          justify-content: space-between
         &.tech
+          width: 80%
+          margin: 2% auto 0
           span
             max-width: 15%
             &.js
