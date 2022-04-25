@@ -93,28 +93,15 @@
         transition-property: background-color, color
       .sass
         border: solid 3px #CF649A
-        &:hover
-          background-color: #CF649A
-          color: #fdfbf9
       .js
         width: 50%
         border: solid #ebcd00 3px
-        &:hover
-          background-color: #ebcd00
       .css
         border: solid #0D8BF2 3px
-        &:hover
-          background-color: #0D8BF2
-          color: #fdfbf9
       .html
         border: solid #E54C21 3px
-        &:hover
-          background-color: #E54C21
-          color: #fdfbf9
       .react
         border: solid #61DAFB 3px
-        &:hover
-          background-color: #61DAFB
 
 @media #{$phone-landscape}
   .projects
@@ -205,6 +192,26 @@
         width: auto
       p
         font-size: 1.8rem
+        &.tech
+          span
+            &.sass
+              &:hover
+                background-color: #CF649A
+                color: #fdfbf9
+            &.js
+              &:hover
+                background-color: #ebcd00
+            &.css
+              &:hover
+                background-color: #0D8BF2
+                color: #fdfbf9
+            &.html
+              &:hover
+                background-color: #E54C21
+                color: #fdfbf9
+            &.react
+              &:hover
+                background-color: #61DAFB
     .arrow
       span, 
       i
